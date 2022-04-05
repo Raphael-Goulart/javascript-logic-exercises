@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<input>
+<button>Compare com o meu segredo</button>
+
+<script>
+
+	var segredo = Math.round(Math.random() * 10);// ele só irá mudar o numero aleatorio quando a pag for recarregada
+	var input = document.querySelector("input"); //diz pra ele pegar a tag do html para trabalhar no javascript
+	input.focus();
+
+	function verifica() {
+
+		if(input.value == segredo) {
+
+		alert("Você acertou!");
+	} else {
+
+		alert("Você Errou!");
+	}
+
+	input.value = "";//irá apos a mensagem de erro do popup limpar a caixa para tentar novamente
+	input.focus(); //ele dará um foco no campo para digitar o valor uma margem 
+}
+
+var button = document.querySelector("button");
+button.onclick = verifica;// tudo isso vai fazer o verifica abrir o function e associar no clique do botão
+
+	
+
+</script>
