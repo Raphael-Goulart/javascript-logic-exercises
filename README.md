@@ -1,2 +1,2 @@
-# javascript-logic-exercises
-javascript logic exercises developed by Alura
+# HTML-javascript-logic-exercises
+ logic exercises developed by Alura
