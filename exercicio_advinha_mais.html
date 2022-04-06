@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<input>
+<button>Compare com o meu segredo</button>
+
+<script>
+    // o exercício consiste em fazer o usuário tentar advinhar qual dos 4 números o programa tem escondido.
+
+	var segredo = Math.round(Math.random() * 10);// ele só irá mudar o numero aleatorio quando a pag for recarregada, gera a variavel segredo de um numero aelatório
+	var input = document.querySelector("input"); //diz pra ele pegar a tag do html para trabalhar no javascript
+	input.focus();//da um foco ao quadro
+
+	function verifica() { //pega o valor digitado no input e compara com  a variavel segredo
+
+		if(input.value == segredo) {//se o valor digitado no input for igual ao segredo, exibe o alert abaixo
+
+		alert("Você acertou!");
+	} else { //mas se o valor digitado no input for diferente da variavel segredo ele exibe o alert abaixo
+
+		alert("Você Errou!");
+	}
+
+	input.value = "";//irá apos a mensagem de erro do popup limpar a caixa para tentar novamente
+	input.focus(); //ele dará um foco no campo para digitar o valor cria uma margem 
+}
+
+	var button = document.querySelector("button");//a função verifica só irá ser executada quando clicada no botão.
+	button.onclick = verifica;// O comando irá fazer o verifica abrir o function e associa-lo ao clique do botão.
+
+</script>
