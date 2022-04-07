@@ -1,0 +1,40 @@
+
+<meta charset="UTF-8">
+
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+var anoCopa = 1930;
+
+while(anoCopa <= 2022){ //enquanto for verdadeiro ele irá atualizar as popups eternamente adicionando 4 anos
+
+	alert("teve copa em " + anoCopa);
+	anoCopa = anoCopa + 4;
+}
+
+</script>
+
+<!DOCTYPE html>
+<head>
+	<title>Ano Copa</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="copa.css">
+</head>
+<body>
+	<h1 class="principal">Esse ano tem Copa!!!</h1>
+	<img src="img/katar.jpg" class="imagem">
+</body>
