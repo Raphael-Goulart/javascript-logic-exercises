@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style_2.css">
+	<title>Z-index</title>
+</head>
+<body>
+	<div class="quadrado-1">Quadrado 1</div>
+	<div class="quadrado-2">
+	 Quadrado 2 <br>
+	 com z-index: 1 definido no css
+	 </div>
+	<div class="quadrado-3">Quadrado 3</div>
+</body>
+</html>
+
+<!--Se quisermos que o quadrado 2 fique em destaque colocamos um z-index: 1; no css e ele irá sobresair, sendo agora o principal elemento da página.
+Os outros qudrados ficarão automaticos (z-index: auto;), por não terem sidos definidos a sua posição o navegador, por padrão, deixarão eles seguindo a ordem de quadrado 3 e por ultimo quadrado 1, pela ordem de importância.-->
